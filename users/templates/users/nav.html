@@ -1,0 +1,15 @@
+
+{% if request.user.is_authenticated %}
+<h1>this is navbar after login</h1>
+
+<li><a href="{% url 'logout' %}">Logout</a></li>
+<li><a href="{% url 'account' %}">Account</a></li>
+
+
+{% else %}
+<h1>this is navbar content before login</h1>
+
+<li><a href="{% url 'login' %}">Login/Sign Up</a></li>
+<li><a href="{% url 'register' %}">Register</a></li>
+
+{% endif %}
