@@ -1,1 +1,2 @@
 pip install "django>=3.2,<3.3"
+just some changes 
